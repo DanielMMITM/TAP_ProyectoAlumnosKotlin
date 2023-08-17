@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#d3d3d3"
+    android:layout_height="match_parent"
+    tools:context=".EvaluacionDocente">
+
+
+    <Button
+        android:id="@+id/btnSiguienteEvDoc"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Siguiente"
+        android:layout_margin="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnAnteriorEvDoc"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Anterior"
+        android:layout_margin="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnGuardarEvDoc"
+        android:text="Guardar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Profesor1"
+        android:text="Profesor 1"
+        android:layout_below="@+id/RubroDesc1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Profesor2"
+        android:text="Profesor 2"
+        android:layout_below="@+id/RubroDesc1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    //Interfaz rubro 1
+    <TextView
+        android:id="@+id/Rubro1"
+        android:text="Rubro 1"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/RubroDesc1"
+        android:layout_below="@+id/Rubro1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="El maestro asiste a todas las clases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf1_Rubro1"
+        android:entries="@array/ponderacion"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf2_Rubro1"
+        android:entries="@array/ponderacion"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    //Interfaz rubro 2
+    <TextView
+        android:id="@+id/Rubro2"
+        android:text="Rubro 2"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/RubroDesc2"
+        android:layout_below="@+id/Rubro1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="El maestro explica sus clases correctamente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf1_Rubro2"
+        android:entries="@array/ponderacion"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf2_Rubro2"
+        android:entries="@array/ponderacion"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    //Interfaz rubro 3
+
+    <TextView
+        android:id="@+id/Rubro3"
+        android:text="Rubro 3"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/RubroDesc3"
+        android:layout_below="@+id/Rubro1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="El maestro resuelve todas las dudas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf1_Rubro3"
+        android:entries="@array/ponderacion"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf2_Rubro3"
+        android:entries="@array/ponderacion"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    //Interfaz rubro 4
+
+    <TextView
+        android:id="@+id/Rubro4"
+        android:text="Rubro 4"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/RubroDesc4"
+        android:layout_below="@+id/Rubro1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="El maestro usa la tecnología para el aprendizaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf1_Rubro4"
+        android:entries="@array/ponderacion"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf2_Rubro4"
+        android:entries="@array/ponderacion"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    //Interfaz rubro 5
+
+    <TextView
+        android:id="@+id/Rubro5"
+        android:text="Rubro 5"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/RubroDesc5"
+        android:layout_below="@+id/Rubro1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="El maestro entrega calificaciones a tiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf1_Rubro5"
+        android:entries="@array/ponderacion"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf2_Rubro5"
+        android:entries="@array/ponderacion"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    //Interfaz rubro 6
+
+    <TextView
+        android:id="@+id/Rubro6"
+        android:text="Rubro 6"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/RubroDesc6"
+        android:layout_below="@+id/Rubro1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="El maestro muestra respeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf1_Rubro6"
+        android:entries="@array/ponderacion"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf2_Rubro6"
+        android:entries="@array/ponderacion"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    //Interfaz rubro 7
+
+    <TextView
+        android:id="@+id/Rubro7"
+        android:text="Rubro 7"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/RubroDesc7"
+        android:layout_below="@+id/Rubro1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="El maestro enfoca la materia en un ambiente profesional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf1_Rubro7"
+        android:entries="@array/ponderacion"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf2_Rubro7"
+        android:entries="@array/ponderacion"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    //Interfaz rubro 8
+
+    <TextView
+        android:id="@+id/Rubro8"
+        android:text="Rubro 8"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/RubroDesc8"
+        android:layout_below="@+id/Rubro1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="El maestro da retroalimentación"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf1_Rubro8"
+        android:entries="@array/ponderacion"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf2_Rubro8"
+        android:entries="@array/ponderacion"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    //Interfaz rubro 9
+
+    <TextView
+        android:id="@+id/Rubro9"
+        android:text="Rubro 9"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/RubroDesc9"
+        android:layout_below="@+id/Rubro1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="El maestro es imparcial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf1_Rubro9"
+        android:entries="@array/ponderacion"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/SpinnerProf2_Rubro9"
+        android:entries="@array/ponderacion"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Profesor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    //Interfaz comentarios
+    <TextView
+        android:id="@+id/comentarios"
+        android:text="Comentarios"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/descComentarios"
+        android:layout_below="@+id/Rubro1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Comentarios extras para los profesores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/comentarios1"
+        android:layout_below="@+id/SpinnerProf1_Rubro1"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="190dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/comentarios2"
+        android:layout_below="@+id/SpinnerProf1_Rubro1"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="190dp"
+        android:layout_height="50dp"/>
+
+
+
+</RelativeLayout>

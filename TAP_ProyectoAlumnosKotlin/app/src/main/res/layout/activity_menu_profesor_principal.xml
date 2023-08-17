@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#d3d3d3"
+    tools:context=".MenuProfesorPrincipal">
+
+    <TextView
+        android:id="@+id/textUsuario"
+        android:text="Bienvenido: "
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textMateria"
+        android:text="Materia: "
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/teal_700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textTotalAlumnos"
+        android:text="Total de alumnos que realizaron la evaluación: "
+
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textAlumnos"
+        android:text="Alumnos que evaluaron: "
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textRubro1"
+        android:text="Promedio rubro 1: "
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textRubro2"
+        android:text="Promedio rubro 2: "
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textRubro3"
+        android:text="Promedio rubro 3: "
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textRubro4"
+        android:text="Promedio rubro 4: "
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textRubro5"
+        android:text="Promedio rubro 5: "
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textRubro6"
+        android:text="Promedio rubro 6: "
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textRubro7"
+        android:text="Promedio rubro 7: "
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textRubro8"
+        android:text="Promedio rubro 8: "
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textRubro9"
+        android:text="Promedio rubro 9: "
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textPromedio"
+        android:text="Promedio total: "
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textComentarios"
+        android:text="Comentarios: "
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

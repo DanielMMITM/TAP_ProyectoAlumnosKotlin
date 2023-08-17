@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.edu.itm.edgar.tap_proyectoalumnoskotlin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/itm"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TAP_ProyectoAlumnosKotlin"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".EvaluacionDocente"></activity>
+        <activity android:name=".ReticulaAlumno" />
+        <activity android:name=".CalificacionesAlumno" />
+        <activity android:name=".HorarioAlumno" />
+        <activity android:name=".DatosPersonalesAlumno" />
+        <activity android:name=".MenuAlumnoPrincipal" />
+        <activity android:name=".RegistroAlumno" />
+        <activity android:name=".RegistroProfe" />
+        <activity android:name=".MenuProfesorPrincipal" />
+        <activity android:name=".LoginProfesor" />
+        <activity android:name=".LoginAlumno" />
+        <activity android:name=".Bienvenida">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

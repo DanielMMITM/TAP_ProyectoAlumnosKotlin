@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    tools:context=".DatosPersonalesAlumno">
+
+    <TextView
+        android:id="@+id/nombreInterna"
+        android:text="Alumno: "
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/nombreAlumno"
+        android:text="Alumno"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@+id/nombreInterna"
+        android:layout_alignBottom="@+id/nombreInterna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/cambioNombre"
+        android:text="Cambiar\nnombre: "
+        android:layout_below="@+id/nombreInterna"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/nombreNuevo"
+        android:hint="Escriba el nuevo nombre"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@+id/cambioNombre"
+        android:layout_alignBottom="@+id/cambioNombre"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnNuevoNombre"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nombreNuevo"
+        android:layout_marginTop="10dp"
+        android:text="Guardar nuevo nombre"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/nControlInterna"
+        android:layout_below="@+id/btnNuevoNombre"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:text="Número de control: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/numControl"
+        android:layout_below="@+id/nControlInterna"
+        android:layout_alignStart="@+id/nControlInterna"
+        android:layout_alignEnd="@+id/nControlInterna"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="1234567890"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/semestreInterno"
+        android:layout_alignBottom="@+id/nControlInterna"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="100dp"
+        android:textSize="20sp"
+        android:text="Semestre:"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/intSemestre"
+        android:text="número"
+        android:textColor="@color/black"
+        android:layout_alignStart="@+id/semestreInterno"
+        android:layout_alignBottom="@+id/numControl"
+        android:textSize="20sp"
+        android:layout_alignEnd="@+id/semestreInterno"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/carreraAlumno"
+        android:text="Carrera:"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_below="@+id/intSemestre"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/carAlum"
+        android:text="CarreraAlumno"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_below="@+id/carreraAlumno"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+<TextView
+    android:id="@+id/cambiarContraseniaText"
+    android:text="Cambiar contraseña"
+    android:textColor="@color/black"
+    android:layout_below="@+id/carAlum"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ContraseniaAnterior"
+        android:hint="Contraseña anterior"
+        android:layout_below="@id/cambiarContraseniaText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ContraseniaNueva"
+        android:hint="Contraseña nueva"
+        android:layout_below="@id/ContraseniaAnterior"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnGuardarNuevaContrasenia"
+        android:text="Guardar"
+        android:layout_below="@id/ContraseniaNueva"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SGE</string>
+    <string name="ws">"http://192.168.0.21/WSProyecto/</string>
+    <string-array name="ponderacion">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>
